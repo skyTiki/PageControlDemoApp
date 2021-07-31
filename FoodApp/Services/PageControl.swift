@@ -13,6 +13,7 @@ struct PageControl: UIViewRepresentable {
     
     func makeUIView(context: Context) -> UIPageControl {
         let control = UIPageControl()
+        // ページングスタイル
         control.backgroundStyle = .minimal
         control.numberOfPages = maxPages
         control.currentPage = currentPage
@@ -23,5 +24,11 @@ struct PageControl: UIViewRepresentable {
         uiView.currentPage = currentPage
     }
     
+}
+
+struct PageControl_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
 

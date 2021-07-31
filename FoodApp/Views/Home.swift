@@ -61,7 +61,7 @@ struct Home: View {
                     Text(selectedTab.title)
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding(.top, 20)
+                        .padding(.top, 5)
                         .padding(.bottom, 18)
                     
                     PageControl(maxPages: trips.count, currentPage: getIndex())
