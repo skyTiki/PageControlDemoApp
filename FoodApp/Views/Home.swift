@@ -27,6 +27,48 @@ struct Home: View {
                 
             }
             .ignoresSafeArea()
+            
+            VStack {
+                Text("Let's go")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                Text("Pocotrip")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.white)
+                    .padding(.bottom, 30)
+            }
+            
+            VStack {
+                GeometryReader { proxy in
+                    let frame = proxy.frame(in: .global)
+                    TabView(selection: $selectedTab,
+                            content:  {
+                                ForEach(trips){ trip in
+                                    Image(trip.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: frame.width - 10, height: frame.height, alignment: .center)
+                                        .cornerRadius(4)
+                                        // これで背景も変える
+                                        .tag(trip)
+                                }
+                            })
+                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                }
+                .frame(height: UIScreen.main.bounds.height / 2.2)
+                
+                Button(action: {}, label: {
+                    Text("Get Started")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.vertical, 15)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                })
+            }
+            
         }
     }
 }
