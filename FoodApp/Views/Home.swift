@@ -64,7 +64,7 @@ struct Home: View {
                     .padding(.top, 20)
                     .padding(.bottom, 18)
                     
-                // TODO: - PageControl
+                PageControl(maxPages: trips.count, currentPage: getIndex())
                 
             }
             .padding(.top)
@@ -88,7 +88,15 @@ struct Home: View {
         }
         .padding()
     }
+    
+    private func getIndex() -> Int {
+        let index = trips.firstIndex { trip in
+            trip.id == selectedTab.id
+        } ?? 0
+        return index
+    }
 }
+
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
