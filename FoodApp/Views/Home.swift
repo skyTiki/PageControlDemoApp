@@ -58,18 +58,35 @@ struct Home: View {
                 }
                 .frame(height: UIScreen.main.bounds.height / 2.2)
                 
-                Button(action: {}, label: {
-                    Text("Get Started")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.vertical, 15)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                })
+                Text(selectedTab.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.top, 20)
+                    .padding(.bottom, 18)
+                    
+                // TODO: - PageControl
+                
             }
+            .padding(.top)
+            .padding(.horizontal, 10)
+            .padding(.bottom, 5)
+            // TODO: - CustomShape
+            .background(Color.white.clipShape(Capsule()))
+            .padding(.horizontal, 20)
             
+            Button(action: {}, label: {
+                Text("Get Started")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.vertical, 15)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            })
+            .padding(.top, 30)
+            .padding(.horizontal)
         }
+        .padding()
     }
 }
 
