@@ -14,6 +14,7 @@
 		900620A626B5269F00E21228 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900620A526B5269F00E21228 /* Trip.swift */; };
 		900620AA26B5281B00E21228 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900620A926B5281B00E21228 /* Home.swift */; };
 		900620AE26B52F8E00E21228 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900620AD26B52F8E00E21228 /* PageControl.swift */; };
+		900620B126B5316600E21228 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900620B026B5316600E21228 /* CustomShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		900620A526B5269F00E21228 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		900620A926B5281B00E21228 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		900620AD26B52F8E00E21228 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		900620B026B5316600E21228 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				900620AD26B52F8E00E21228 /* PageControl.swift */,
+				900620B026B5316600E21228 /* CustomShape.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				900620AE26B52F8E00E21228 /* PageControl.swift in Sources */,
 				900620A626B5269F00E21228 /* Trip.swift in Sources */,
+				900620B126B5316600E21228 /* CustomShape.swift in Sources */,
 				9006209626B4E68700E21228 /* ContentView.swift in Sources */,
 				900620AA26B5281B00E21228 /* Home.swift in Sources */,
 				9006209426B4E68700E21228 /* FoodAppApp.swift in Sources */,
